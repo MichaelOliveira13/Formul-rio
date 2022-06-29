@@ -1,7 +1,8 @@
 <html lang="pt-br">
     <head>
         <link rel="shortcut icon" href="2343535.png" type="iconeforms">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="styles.css">
+        
         <title>
             Formulário Michael 
         </title>
@@ -10,51 +11,42 @@
 
         <h1> Formulário Iniciante </h1>
         
-        <form>
+        <form id="formulario"> 
         
             <h4><li> Qual seu nome? </li></h4> 
-            <input type="text" name="Nome" placeholder="Nome Completo" id="inputnome" required>
-            <br>
-            <hr>
-
-            <h4><li> Qual seu sexo? </li></h4>
-            <input type="radio" name="sexo" id="inputfeminino" required> 
-            <label for="inputfeminino">Feminino</label>
-            <input type="radio" name="sexo" id="inputmasculino" required>
-            <label for="inputmasculino">Masculino</label>
-            <input type="radio" name="sexo" id="inputindefinido" required>
-            <label for="inputindefinido">Não Binário</label>
+            <input type="text" id="nome" >
             <br> 
             <hr>
     
             <h4><li> Qual sua data de nascimento? </li></h4>
-            <input type="date" name="Idade" id="inputidade" required> 
+            <input type="date" id="inputnascimento" > 
             <br>
             <hr>
 
             <h4><li> Digite seu email! </li></h4>
-            <input type="email" name="Email" placeholder="exemplo@gmail.com" id="emailinput" required>
+            <input type="email" placeholder="exemplo@gmail.com" id="emailinput" >
             <br>
             <hr>
 
             <h4><li> Digite sua Senha! </li></h4>
-            <input type="password" name="Senha" id="inputsenha" placeholder="Senha" required>
+            <input type="password" id="inputsenha" placeholder="Senha" >
             <br>
             <hr>
         
             <h4><li> Insira seu Telefone! </li></h4>
-            <input type="tel" name="Telefone" id="inputtelefone" placeholder="(xx) xxxxx-xxxx" required>
+            <input type="tel" id="inputtelefone" placeholder="(xx) xxxxx-xxxx" >
             <br>
             <hr>
 
-            <button type="submit">
-                Enviar
-            </button>
+            <input type="submit" value="Enviar">
         </form>
+
+
         <footer class="footer">
             <address>
                 Powered by &COPY;Michael 2022
             </address>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
